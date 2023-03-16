@@ -1,7 +1,11 @@
 name: github-actions-test
 
 on:
-  any:
+  - pull_request
+  - issues
+  - issue_comment
+  - push
+    :
     branches: [master]
 
 jobs:
