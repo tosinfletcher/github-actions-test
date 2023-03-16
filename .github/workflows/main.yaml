@@ -3,6 +3,11 @@ name: github-actions-test
 on:
   '*':
     branches: [master]
+    types:
+      - pull_request
+      - issues
+      - issues_comment
+      - push
 
 jobs:
   test:
