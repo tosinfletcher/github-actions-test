@@ -1,12 +1,8 @@
 name: github-actions-test
 
-on:
-  - pull_request
-  - issues
-  - issue_comment
-  - push
-    :
-    branches: [master]
+on: [pull_request, issues, issue_comment, push]
+
+branches: [master]
 
 jobs:
   test:
