@@ -2,8 +2,8 @@ name: github-actions-test
 
 on:
   push:
-
-  branches: [master]
+    branches:
+      - master
 
 jobs:
   test:
